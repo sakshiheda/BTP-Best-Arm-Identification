@@ -14,6 +14,7 @@ with open('Data.csv', mode ='r')as file:
 hardness = data[0]
 original = data[1]
 modif = data[2]
+combination = data[3]
 
 
 size = 27
@@ -21,10 +22,11 @@ line = 4
 marker = 13
 plt.plot(hardness, original, '-o', color = 'purple', linewidth = line, markersize = marker)
 plt.plot(hardness, modif, '-D', color = 'peru', linewidth = line, markersize = marker)
+plt.plot(hardness, combination, '-X', color = 'darkolivegreen', linewidth = line, markersize = marker)
 # plt.title("Experiment 1")
 plt.xticks(fontsize = size)
 plt.yticks(fontsize = size)
-plt.legend(["Original", "Modification"], fontsize = size, loc = 'upper left')
+plt.legend(["Original", "Modification", "Combination"], fontsize = size, loc = 'upper left')
 plt.xlabel("Hardness", fontsize = size)
 plt.ylabel("Number of Samples", fontsize = size)
 plt.grid(True, 'major', c = '#E3E3E3')
