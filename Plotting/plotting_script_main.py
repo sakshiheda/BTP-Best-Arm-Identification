@@ -30,7 +30,7 @@ plt.legend(["Action Elimination", "Feasibility then BAI", "CSS_LUCB"], fontsize 
 plt.xlabel("Hardness", fontsize = size)
 plt.ylabel("Number of Samples", fontsize = size)
 plt.grid(True, 'major', c = '#E3E3E3')
-# plt.ylim(20000, 50000)
+plt.ylim(100000, 1000000)
 # plt.rcParams.update({'font.size': 35})
 # plt.rc('font', size = 50)
 plt.show()
